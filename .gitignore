@@ -1,0 +1,41 @@
+### system #########
+.DS_Store
+
+
+### project ########
+target/
+bin/
+.mvn
+.project
+.settings
+.classpath
+.springBeans
+**/.classpath
+**/.project
+**/.gradle/
+**/classes
+**/target/
+**/build/
+**/bin/
+*.swp
+*.ipr
+*.iws
+*.iml
+
+### ide ############
+.idea
+.vscode
+
+### cache ##########
+.sass-cache/
+.tmp/
+.Cache
+**/dist/
+**/node_modules/
+
+### other ##########
+__pycache__
+*.pyc
+*.db
+.log
+*.bak

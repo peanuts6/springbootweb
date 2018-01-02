@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="xqy.msa.springbootweb.auth.domain.UserMapperCus">
+  <resultMap id="BaseResultMap" type="xqy.msa.springbootweb.auth.domain.User">
+    <result column="id" jdbcType="INTEGER" property="id" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="enabled" jdbcType="CHAR" property="enabled" />
+    <result column="remember" jdbcType="CHAR" property="remember" />
+    <result column="qq" jdbcType="VARCHAR" property="qq" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="website" jdbcType="VARCHAR" property="website" />
+    <result column="weixin" jdbcType="VARCHAR" property="weixin" />
+    <!--<collection property="authorities" column="role" ofType="org.springframework.security.core.GrantedAuthority" select="selectRoles"/>-->
+  </resultMap>
+  <select id="selectByName" resultMap="BaseResultMap">
+  	select * from imk_users where username = #{username,jdbcType=VARCHAR}
+  </select>
+  <select id="selectRoles" parameterType="java.lang.String" resultType="org.springframework.security.core.authority.SimpleGrantedAuthority">
+    select role from imk_userrole where username = #{username,jdbcType=VARCHAR}
+  </select>
+ </mapper>

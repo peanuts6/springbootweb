@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>QUEEN SIGNUP</title>
+
+    <!-- customer stylesheet -->
+    <link href="../assets/styles/app.css" rel="stylesheet">
+</head>
+<body class="login">
+	<div class="page">
+		<div class="page-head">
+			<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                <div class="container">
+                    <button class="navbar-toggler navbar-toggler-right align-self-sm-end" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" style="display:block;" href="/">QUEEN</a>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/admin/index.html">admin</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/edu/index.html">edu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/project/index.html">project</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/my/index.html">my</a>
+                            </li>
+                        </ul>
+                        <span class="navbar-text" id="navbar-right">
+                            <a href="/auth/login.html">登录</a> ｜ <a href="/auth/reg.html">注册</a>
+                        </span>
+                    </div>
+                </div>
+            </nav>
+ 		</div>
+
+ 		<div class="page-body mt-5">
+ 			<div class="container">
+ 				<div class="section-head">
+ 					<h3 class="text-center section-title">登录</h3>
+ 					<div class="text-center section-subtitle"></div>
+ 				</div>
+ 				<div class="section-body d-flex justify-content-center pt-2 pb-5">
+ 					<div class="auth-login mt-2 mb-5 p-4 rounded">
+ 						<form class="auth-login-form" id="auth-login-form">
+ 							<div class="form-group row">
+ 								<label for="user_email" class="col-sm-3 col-form-label">邮箱 </label>
+ 								<div class="col-sm-9">
+ 									<input class="form-control" id="username" type="text" value="" name="username" />
+ 								</div>
+ 							</div>
+ 							<div class="form-group row">
+ 								<label for="user_password" class="col-sm-3 col-form-label">密码 </label>
+ 								<div class="col-sm-9">
+ 									<input class="form-control" id="password" type="password" name="password" />
+ 								</div>
+ 							</div>
+ 							<div class="form-group row">
+ 								<label for="user_remember_me" class="offset-sm-3 col-sm-9 col-form-label">
+ 									<input type="checkbox" name="remember_me" id="remember_me" value="1"> 记住我
+ 								</label>
+ 							</div>
+ 							<div class="form-group row">
+ 								<div class="col-sm-12">
+ 									<button name="button" type="button" class="btn btn-danger btn-block btn-login">登录</button>
+ 								</div>
+ 							</div>
+ 						</form>
+ 						<div class="auth_links row">
+ 							<div class="col-sm-12 text-center d-flex justify-content-between">
+ 								<a>注册</a>
+ 								<a>忘记密码?</a>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+
+ 		<div class="page-foot">
+ 			<div class="container">
+ 				<p>&copy; 2018 imking.io
+ 			</div>
+ 		</div>
+	</div>
+
+	<script src="../assets/lib/jquery/jquery-3.2.1.min.js"></script>
+	<script src="../assets/lib/tether/js/tether.min.js"></script>
+	<script src="../assets/lib/bootstrap4/js/bootstrap.min.js"></script>
+	<script src="../assets/lib/jquery-validation/jquery.validate.min.js"></script>
+	<script src="../assets/js/common.js"></script>
+	<script>
+		$(function(){
+
+			// $('.btn-login').on('click',function(e){
+			// 	e.stopPropagation();
+			// 	e.preventDefault();
+			// 	var username = $('#username').val();
+			// 	var password = $('#password').val();
+			// 	var remember_me = $('#remember_me:checked').val();
+            //
+			// 	_ajax.post({
+			// 		url:'/auth/api/login',
+			// 		data:{username:username,password:password,remember_me:remember_me},
+			// 		success:function(res, status,jqxhr){
+			// 			console.log('success',res,' ',status,' ',jqxhr);
+			// 		},
+			// 		error:function(err){
+			// 			console.log('err',err)
+			// 		}
+			// 	})
+            //
+			// })
+		})
+	</script>
+</body>
+</html>
