@@ -15,29 +15,29 @@
 
 ## 目录结构
  * ___ src/main
-...|__ java
-......|__ xqy.msa.springbootweb
-.........|__ App.java
-.........|__ admin
-............|__ domain
-............|__ service
-............|__ web
-.........|__ auth
-.........|__ edu
-.........|__ portal
-.........|__ project
-.........|__ util
-...|__ resources
-......|__ static
-.........|__ assets/
-.........|__ admin
-.........|__ auth
-.........|__ edu
-.........|__ my
-.........|__ project
-.........|__ index.html
-......|__ application.yml
-......|__ lm.xml
+ ⋅⋅⋅|__ java⋅⋅⋅
+ ⋅⋅⋅⋅⋅⋅|__ xqy.msa.springbootweb⋅⋅⋅
+ ⋅⋅⋅⋅⋅⋅|__ App.java⋅⋅⋅
+ ⋅⋅⋅⋅⋅⋅|__ admin⋅⋅⋅
+ ⋅⋅⋅⋅⋅⋅⋅⋅⋅|__ domain⋅⋅⋅
+ ⋅⋅⋅⋅⋅⋅⋅⋅⋅|__ service⋅⋅⋅
+ ⋅⋅⋅⋅⋅⋅⋅⋅⋅|__ web⋅⋅⋅
+ ⋅⋅⋅⋅⋅⋅|__ auth⋅⋅⋅
+ ⋅⋅⋅⋅⋅⋅|__ edu⋅⋅⋅
+ ⋅⋅⋅⋅⋅⋅|__ portal⋅⋅⋅
+ ⋅⋅⋅⋅⋅⋅|__ project⋅⋅⋅
+ ⋅⋅⋅⋅⋅⋅|__ util⋅⋅⋅
+ ⋅⋅⋅|__ resources⋅⋅⋅
+ ⋅⋅⋅⋅⋅⋅|__ static⋅⋅⋅
+ ⋅⋅⋅⋅⋅⋅⋅⋅⋅|__ assets/⋅⋅⋅
+ ⋅⋅⋅⋅⋅⋅⋅⋅⋅|__ admin
+ ⋅⋅⋅⋅⋅⋅⋅⋅⋅|__ auth
+ ⋅⋅⋅⋅⋅⋅⋅⋅⋅|__ edu
+ ⋅⋅⋅⋅⋅⋅⋅⋅⋅|__ my
+ ⋅⋅⋅⋅⋅⋅⋅⋅⋅|__ project
+ ⋅⋅⋅⋅⋅⋅⋅⋅⋅|__ index.html
+ ⋅⋅⋅⋅⋅⋅|__ application.yml
+ ⋅⋅⋅⋅⋅⋅|__ lm.xml
  * ___ doc/**
  * ___ Dockfile
 
