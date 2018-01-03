@@ -14,32 +14,44 @@
  * jquery + bootstrap + scss + (angularjs & typescript)
 
 ## 目录结构
- * ___ src/main
- ⋅⋅⋅|__ java⋅⋅⋅
- ⋅⋅⋅⋅⋅⋅|__ xqy.msa.springbootweb⋅⋅⋅
- ⋅⋅⋅⋅⋅⋅|__ App.java⋅⋅⋅
- ⋅⋅⋅⋅⋅⋅|__ admin⋅⋅⋅
- ⋅⋅⋅⋅⋅⋅⋅⋅⋅|__ domain⋅⋅⋅
- ⋅⋅⋅⋅⋅⋅⋅⋅⋅|__ service⋅⋅⋅
- ⋅⋅⋅⋅⋅⋅⋅⋅⋅|__ web⋅⋅⋅
- ⋅⋅⋅⋅⋅⋅|__ auth⋅⋅⋅
- ⋅⋅⋅⋅⋅⋅|__ edu⋅⋅⋅
- ⋅⋅⋅⋅⋅⋅|__ portal⋅⋅⋅
- ⋅⋅⋅⋅⋅⋅|__ project⋅⋅⋅
- ⋅⋅⋅⋅⋅⋅|__ util⋅⋅⋅
- ⋅⋅⋅|__ resources⋅⋅⋅
- ⋅⋅⋅⋅⋅⋅|__ static⋅⋅⋅
- ⋅⋅⋅⋅⋅⋅⋅⋅⋅|__ assets/⋅⋅⋅
- ⋅⋅⋅⋅⋅⋅⋅⋅⋅|__ admin
- ⋅⋅⋅⋅⋅⋅⋅⋅⋅|__ auth
- ⋅⋅⋅⋅⋅⋅⋅⋅⋅|__ edu
- ⋅⋅⋅⋅⋅⋅⋅⋅⋅|__ my
- ⋅⋅⋅⋅⋅⋅⋅⋅⋅|__ project
- ⋅⋅⋅⋅⋅⋅⋅⋅⋅|__ index.html
- ⋅⋅⋅⋅⋅⋅|__ application.yml
- ⋅⋅⋅⋅⋅⋅|__ lm.xml
- * ___ doc/**
- * ___ Dockfile
+|___ src/main
+<dl>
+    <dt>|__ java</dt>
+    <dd>
+    <dl>
+        <dt>|__ xqy.msa.springbootweb</dt>
+        <dd>|__ App.java</dd>
+        <dd><dt>|__ admin</dt>
+            <dd>|__ domain</dd>
+            <dd>|__ service</dd>
+            <dd>|__ web</dd>
+        </dd>
+        <dd>|__ auth</dd>
+        <dd>|__ edu</dd>
+        <dd>|__ portal</dd>
+        <dd>|__ project</dd>
+        <dd>|__ util</dd>
+    </dl>
+    </dd>
+    <dd>
+        <dl>
+            <dt>|__ resources</dt>
+            <dd><dt>|__ static</dt>
+                <dd>|__ assets</dd>
+                <dd>|__ admin</dd>
+                <dd>|__ auth</dd>
+                <dd>|__ edu</dd>
+                <dd>|__ my</dd>
+                <dd>|__ project</dd>
+                <dd>|__ index.html</dd>
+            </dd>
+            <dd>|__ application.yml</dd>
+            <dd>|__ lm.xml</dd>
+        </dl>
+    </dd>
+    <dd>|___ doc/</dd>
+    <dd>|___ Dockfile</dd>
+</dl>
 
 ## 通用运行环境
 ### 配置代码生成: mybatis-generator-lombok-plugin
@@ -70,7 +82,7 @@ mvn com.github.warmuuh:libsass-maven-plugin:0.2.8-libsass_3.4.4:watch
 
 2. 配置IP方式连接mysql
 ```bash
-    GRANT ALL ON imking.* to root@'本机IP地址' INDENTIFIED BY '123456';
+GRANT ALL ON imking.* to root@'本机IP地址' INDENTIFIED BY '123456';
 ```
 
 3. 配置application.yml
@@ -82,7 +94,7 @@ spring:
     url: jdbc:mysql://__本机IP地址__:3306/imking?useSSL=false&useUnicode=true&characterEncoding=UTF8
 ```
 
-***
+---
 
 ## Docker环境运行
 1. **先创建maven wrapper**
@@ -100,14 +112,14 @@ spring:
 或者...
 **Maven 打包**
 ```bash
-    ./mvnw package && java -Djava.security.egd=file:/dev/./urandom -jar target/springbootweb-0.0.1-SNAPSHOT.jar
+./mvnw package && java -Djava.security.egd=file:/dev/./urandom -jar target/springbootweb-0.0.1-SNAPSHOT.jar
 ```
 3. **Docker方式运行**
 ```bash
-    docker run -p 8080:8080 -t xqy/springbootweb:0.0.1-SNAPSHOT
+docker run -p 8080:8080 -t xqy/springbootweb:0.0.1-SNAPSHOT
 ```
 
-***
+---
 
 ## kubernetes集群环境运行
 本例子测试环境：3台master,4台node。安装配置请参考[k8s权威指南笔记]
