@@ -7,7 +7,14 @@ server:
 logging:
   level: 
     root: WARN
-    org.springframework: DEBUG
+    org:
+      springframework:
+        session: DEBUG
+        boot:
+          spring-boot-starter-data-redis: DEBUG
+      mybatis.spring.boot: DEBUG
+    mysql:
+      mysql-connector-java: DEBUG
 
 spring: 
   application: 
