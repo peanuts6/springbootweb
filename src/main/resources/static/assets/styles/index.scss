@@ -1,3 +1,72 @@
+.section {
+  position: relative;
+  .section-head {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    height: 30px;
+    text-align: center;
+    > .icon {
+      vertical-align: middle;
+    }
+    > .title {
+      font-weight: 700;
+      font-size: 20px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .section-body {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  a{
+    color: initial;
+    text-decoration: none;
+  }
+}
+
+.king-star {
+  padding: 15px 15px 50px 15px;
+  background: rgba(225, 229, 232, 1);
+  .section-body {
+    @media (min-width: 768px) {
+      .col-6 {
+        flex: 0 0 20%;
+        max-width: 20%;
+      }
+    }
+  }
+  .king-star-item {
+    margin: 10px auto;
+    text-align: center;
+    width: 150px;
+    height: 200px;
+    background: inherit;
+    background-color: rgba(240, 240, 240, 1);
+    border: none;
+    border-radius: 0px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.349019607843137);
+    img {
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      margin-top: 22px;
+    }
+    p {
+      margin-bottom: 0.5rem;
+    }
+    .item-name {
+      margin-top: 15px;
+      font-weight: 200;
+      color: #333333;
+    }
+    .item-desc {
+      font-weight: 400;
+      font-size: 12px;
+    }
+  }
+}
+
 .intro {
   background-color: rgba(255, 247, 219, 1);
   .container {
@@ -49,20 +118,8 @@
 
 .kingdom {
   padding: 15px;
-  .kingdom-head {
-    height: 30px;
-    text-align: center;
-    .kingdom-head-icon {
-      vertical-align: middle;
-    }
-    .kingdom-head-title {
-      font-weight: 700;
-      font-size: 20px;
-      display: inline-block;
-      vertical-align: middle;
-    }
-  }
-  .kingdom-body {
+  background: rgb(248, 249, 250);
+  .section-body {
     @media (min-width: 768px) {
       .col-6 {
         flex: 0 0 20%;
@@ -91,7 +148,7 @@
       //  right: -19px;
       //  bottom: -4px;
       //}
-      .icon-triangle{
+      .icon-triangle {
         width: 0;
         height: 0;
         border-right: 30px solid transparent;
@@ -123,4 +180,9 @@
       }
     }
   }
+}
+
+.recommend {
+  padding: 15px;
+  min-height: 400px;
 }
